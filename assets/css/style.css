@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+body {
+    background-color: #deebff;
+}
+h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 80px;
+    margin:5px;
+}
+#giphyIMG{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

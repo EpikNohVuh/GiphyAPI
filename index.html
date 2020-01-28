@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fun with Giphy!</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript" src="./assets/javascript/script.js"></script>
+  <style class="css"></style>
+  <title>Giphy Search</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Giphy Search</h1>
+    <div class="row">
+      <div class="col-md-7 float-left b2 border border-info rounded p-2 m-1" id="buttons-view"
+        style="margin-right:30px;">
+        <!-- Buttons Displayed Here -->
+      </div>
+
+      <div class="col-md-4 float-right b2 border border-info rounded p-2 m-1">
+        <form id="Submission-Form" class="text-center">
+          <input type="text" id="topic-input" value=""><br>
+          <input id="submitTopic" type="submit" value="Find a Giphy Topic" class="px-2 btn btn-info m-1" />
+        </form>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-11 b2 border border-info rounded p-2 m-1" id="Display-Area">
+        <!-- GIFS are appended/displayed here -->
+      </div>
+
+    </div>
+    <footer id="giphyIMG">
+      <img src="assets\images\PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="Powered By Giphy"
+        title="Powered By Giphy">
+    </footer>
+  </div>
+</body>
+
+</html>
