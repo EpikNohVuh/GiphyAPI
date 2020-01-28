@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //declaring variables
 
     var topics = ["PANGOLINS", "MINIONS", "CATS", "DOGS"];
     var APIKey = "fVtHb9wm3P4U8NBL4lJ2Y6x2OwlmwX0Q"
@@ -13,11 +14,13 @@ $(document).ready(function () {
 
         var topic = $("#topic-input").val().trim().toUpperCase();
 
+        // The following, makes sure that an empty field will not get pushed to the array.
         if (topic !== "") {
 
             topics.push(topic);
             $("#topic-input").val("")
 
+            // This function, "makes" the buttons.
             renderButtons();
         }
     });
@@ -29,7 +32,7 @@ $(document).ready(function () {
         // (this is necessary otherwise we will have repeat buttons)
         $("#buttons-view").empty();
 
-        // Looping through the array of movies
+        // Looping through the array of topics
         for (var i = 0; i < topics.length; i++) {
 
             // Then dynamicaly generating buttons for each movie in the array.
@@ -47,15 +50,17 @@ $(document).ready(function () {
 
     };
 
+    //Making the buttons clickable, since they are dynamic.
     $(document).on("click", ".topic", function () {
         console.log($(this).attr("data-name"));
         var value = $(this).attr("data-name");
         displayGIFs(value)
 
     })
-
+// This function, "makes" the buttons.
     renderButtons();
 
+    // This function, will utilize API and and AJAX call, to get the information to make the gifs.
     function displayGIFs(value) {
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + value + "&api_key=" + APIKey + "&limit=10"
         $.ajax({
@@ -63,7 +68,9 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
+            // empty the <div> area, before gifs are appended to the div.
             $("#Display-Area").empty();
+            //looping through each url pull via the ajax call, giving each one their own div,p,data attributes.
             for (let i = 0; i < response.data.length; i++) {
                 var a = $("<div class='topicGIF m-2 float-left'>");
                 var rating = response.data[i].rating;
@@ -103,3 +110,5 @@ $(document).ready(function () {
     });
 
 });
+
+// THE END
