@@ -4,7 +4,7 @@ Easily search through Giphy, for your favorite GIFs. Input your favorite GIF the
 
 ## Creation
 
-Giphy.com is a website that has stored thousands and animated GIFs and MEMEs, and non-animated GIFs (known as stickies). GiphyAPI utilizes giphy.com API database.
+Giphy.com is a website that has stored thousands of animated GIFs and MEMEs, and non-animated GIFs (known as stickies). GiphyAPI utilizes giphy.com API database.
 
 ## How to run GiphyAPI
 
@@ -14,9 +14,9 @@ Giphy.com is a website that has stored thousands and animated GIFs and MEMEs, an
 
 ## SCREENSHOTS
 
-![GiphyAPI](./assets/images/ScreenShotGiphyAPI01.jpg)
+![GiphyAPI](/assets/images/ScreenShotGiphyAPI01.jpg)
 
-[GiphyAPI built by EpikNohVuh](https://EpikNohVuh.github.io/GiphyAPI/)
+Want to try GiphyAPI for yourself? [https://EpikNohVuh.github.io/GiphyAPI/](https://EpikNohVuh.github.io/GiphyAPI/)
 
 ## Built With
 
@@ -27,4 +27,8 @@ Giphy.com is a website that has stored thousands and animated GIFs and MEMEs, an
 - HTML & local CSS
 - AJAX for API GET requests
 
-#### Sole Collaborator for GiphyAPI
+## Sole Collaborator
+
+![image](https://raw.githubusercontent.com/EpikNohVuh/GroupRepository/master/assets/images/SharonPatten.jpg)
+------------ |
+ [Sharon Patten](https://github.com/EpikNohVuh)
